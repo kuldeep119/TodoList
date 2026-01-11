@@ -8,10 +8,14 @@
 import SwiftUI
 
 struct ListView: View {
-    @State var Titles:[String] = ["Hi buddy", "Hello buddy", "Hey buddy"]
+    @State var Titles:[ItemModel] = [
+        ItemModel(title: "Hey", isCompleted: false),
+        ItemModel(title: "Hello", isCompleted: true ),
+        ItemModel(title: "Hiii", isCompleted: true)
+    ]
     var body: some View {
         List{
-            ForEach(Titles, id: \.self) { title in
+            ForEach(Titles){ title in
                 ListRowView(Title: title)
             }
         }
