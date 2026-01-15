@@ -19,6 +19,6 @@ struct ItemModel:Identifiable {
     }
     
     func updateCompletion() -> ItemModel{
-        return ItemModel(id: string,title: title, )
+        return ItemModel(id:id,title: title, isCompleted: !isCompleted )
     }
 }
