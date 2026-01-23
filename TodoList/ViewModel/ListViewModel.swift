@@ -10,18 +10,24 @@ import SwiftUI
 import Combine
 
 class ListViewModel : ObservableObject {
-    @Published var Titles: [ItemModel] = []
+    @Published var Titles: [ItemModel] = [] {
+        didSet{
+            SaveData()
+        }
+    }
+    let itemsKey: String = "save"
+    
     init(){
         getTitles()
     }
 
     func getTitles(){
-        let newTitles = [
-            ItemModel(title: "Hey", isCompleted: false),
-            ItemModel(title: "Hello", isCompleted: true ),
-            ItemModel(title: "Hiii", isCompleted: true)
-        ]
-        Titles.append(contentsOf: newTitles)
+        guard
+            let data = UserDefaults.standard.data(forKey: itemsKey),
+            let SavedData = try? JSONDecoder().decode([ItemModel].self, from: data)
+        else { return }
+        
+        self.Titles = SavedData
     }
 
     func deleteItem(IndexSet:IndexSet){
@@ -38,6 +44,13 @@ class ListViewModel : ObservableObject {
         if let index = Titles.firstIndex(where:{$0.id==item.id}){
             Titles[index] = item.updateCompletion()
         }
+    }
+    
+    func SaveData(){
+        if let encodedData = try? JSONEncoder().encode(Titles){
+            UserDefaults.standard.set(encodedData, forKey: "save")
+        }
+        
     }
 
 }

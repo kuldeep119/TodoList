@@ -20,7 +20,7 @@ struct AddView: View {
                 TextField("Add Items from here", text: $AddItem)
                     .padding(.horizontal)
                     .frame(height:50)
-                    .background(Color.gray.opacity(0.2))
+                    .background(Color(UIColor.secondarySystemBackground))
                     .cornerRadius(10)
                 
                 Button {SaveButtom()} label: {
@@ -61,8 +61,10 @@ struct AddView: View {
 }
 
 #Preview {
-    NavigationStack{
-        AddView()
+    Group {
+        NavigationStack{
+            AddView()
+        }
+        .environmentObject(ListViewModel())
     }
-    .environmentObject(ListViewModel())
 }
