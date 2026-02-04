@@ -10,9 +10,28 @@
 		AEA5C18D2F0ED7A1003F1EE1 /* Peak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Peak.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		AE3E206D2F33472D004E7347 /* Exceptions for "Peak" folder in "Peak" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Models/ItemModel.swift,
+				PeakApp.swift,
+				ViewModel/ListViewModel.swift,
+				Views/AddView.swift,
+				Views/ListRowView.swift,
+				Views/ListView.swift,
+				Views/NoView.swift,
+			);
+			target = AEA5C18C2F0ED7A1003F1EE1 /* Peak */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		AE3E206B2F3345C5004E7347 /* Peak */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				AE3E206D2F33472D004E7347 /* Exceptions for "Peak" folder in "Peak" target */,
+			);
 			path = Peak;
 			sourceTree = "<group>";
 		};
@@ -82,7 +101,7 @@
 					};
 				};
 			};
-			buildConfigurationList = AEA5C1882F0ED7A1003F1EE1 /* Build configuration list for PBXProject "TodoList" */;
+			buildConfigurationList = AEA5C1882F0ED7A1003F1EE1 /* Build configuration list for PBXProject "Peak" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -269,7 +288,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.kuldeep.TodoList;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kuldeep.Peak;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -307,7 +326,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.kuldeep.TodoList;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kuldeep.Peak;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -322,7 +341,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AEA5C1882F0ED7A1003F1EE1 /* Build configuration list for PBXProject "TodoList" */ = {
+		AEA5C1882F0ED7A1003F1EE1 /* Build configuration list for PBXProject "Peak" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AEA5C1962F0ED7A3003F1EE1 /* Debug */,
