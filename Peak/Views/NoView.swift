@@ -15,7 +15,7 @@ struct NoView: View {
                 Text("There is No items")
                     .font(.title)
                     .fontWeight(.semibold)
-                Text("Your Bucket is Empty. Just click on Add button and add bunch of items to your Todo List !")
+                Text("Your Bucket is Empty. Just click on Add button and add bunch of items to your day!")
                     .padding(.bottom,20)
                 NavigationLink(destination: AddView()) {
                     Text("Add Item ")
@@ -25,6 +25,7 @@ struct NoView: View {
                         .frame(height: 55)
                         .background(animate ? Color.red : Color.accentColor)
                         .cornerRadius(20)
+                        
                     
                 }.padding(.horizontal,animate ? 30 : 50)
                     .shadow(
@@ -34,6 +35,7 @@ struct NoView: View {
                         y:  animate ? 50 : 30  )
                     .scaleEffect(animate ? 1.1 : 1.0)
                     .offset(y: animate ? -7 : 0)
+                    
                  
                     
             }
