@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		AEA5C18D2F0ED7A1003F1EE1 /* TodoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEA5C18D2F0ED7A1003F1EE1 /* Peak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Peak.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		AEA5C18F2F0ED7A1003F1EE1 /* TodoList */ = {
+		AE3E206B2F3345C5004E7347 /* Peak */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = TodoList;
+			path = Peak;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -32,7 +32,7 @@
 		AEA5C1842F0ED7A1003F1EE1 = {
 			isa = PBXGroup;
 			children = (
-				AEA5C18F2F0ED7A1003F1EE1 /* TodoList */,
+				AE3E206B2F3345C5004E7347 /* Peak */,
 				AEA5C18E2F0ED7A1003F1EE1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -40,7 +40,7 @@
 		AEA5C18E2F0ED7A1003F1EE1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AEA5C18D2F0ED7A1003F1EE1 /* TodoList.app */,
+				AEA5C18D2F0ED7A1003F1EE1 /* Peak.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,9 +48,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AEA5C18C2F0ED7A1003F1EE1 /* TodoList */ = {
+		AEA5C18C2F0ED7A1003F1EE1 /* Peak */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AEA5C1982F0ED7A3003F1EE1 /* Build configuration list for PBXNativeTarget "TodoList" */;
+			buildConfigurationList = AEA5C1982F0ED7A3003F1EE1 /* Build configuration list for PBXNativeTarget "Peak" */;
 			buildPhases = (
 				AEA5C1892F0ED7A1003F1EE1 /* Sources */,
 				AEA5C18A2F0ED7A1003F1EE1 /* Frameworks */,
@@ -60,14 +60,11 @@
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				AEA5C18F2F0ED7A1003F1EE1 /* TodoList */,
-			);
-			name = TodoList;
+			name = Peak;
 			packageProductDependencies = (
 			);
 			productName = TodoList;
-			productReference = AEA5C18D2F0ED7A1003F1EE1 /* TodoList.app */;
+			productReference = AEA5C18D2F0ED7A1003F1EE1 /* Peak.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -99,7 +96,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AEA5C18C2F0ED7A1003F1EE1 /* TodoList */,
+				AEA5C18C2F0ED7A1003F1EE1 /* Peak */,
 			);
 		};
 /* End PBXProject section */
@@ -254,16 +251,19 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 43CTQSK4RD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Todo List";
+				INFOPLIST_KEY_CFBundleDisplayName = Peak;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -289,16 +289,19 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 43CTQSK4RD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Todo List";
+				INFOPLIST_KEY_CFBundleDisplayName = Peak;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -328,7 +331,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AEA5C1982F0ED7A3003F1EE1 /* Build configuration list for PBXNativeTarget "TodoList" */ = {
+		AEA5C1982F0ED7A3003F1EE1 /* Build configuration list for PBXNativeTarget "Peak" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AEA5C1992F0ED7A3003F1EE1 /* Debug */,

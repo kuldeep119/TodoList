@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct TodoListApp: App {
+struct PeakApp: App {
     
   @StateObject  var listViewModel: ListViewModel = ListViewModel()
     

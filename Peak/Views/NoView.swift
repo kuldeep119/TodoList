@@ -15,7 +15,7 @@ struct NoView: View {
                 Text("There is No items")
                     .font(.title)
                     .fontWeight(.semibold)
-                Text("Your Bucket is Empty.Just click on Add button and add bunch of items to your Todo List !")
+                Text("Your Bucket is Empty. Just click on Add button and add bunch of items to your Todo List !")
                     .padding(.bottom,20)
                 NavigationLink(destination: AddView()) {
                     Text("Add Item ")
@@ -56,6 +56,7 @@ struct NoView: View {
             
         }
     }
+        
 }
 
 #Preview {
